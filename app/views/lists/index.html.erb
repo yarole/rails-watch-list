@@ -18,6 +18,7 @@
       <div class="co-12 col-sm-6 col-md-4 mb-3">
         <%= link_to list_path(list), class:"text-decoration-none" do %>
           <div class="card-category" data-aos="zoom-in">
+            <%= cl_image_tag list.photo.key, height: 300, width: 400, crop: :fill %>
             <%= list.name %>
           </div>
         <% end %>
@@ -25,3 +26,5 @@
     <% end %>
   </div>
 </div>
+<%= cl_image_tag("https://res.cloudinary.com/dkbccixax/image/upload/v1675370973/kh4zdyuidzfnxzczl92j.jpg",
+      width: 400, height: 300, crop: :fill) %>
